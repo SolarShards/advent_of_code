@@ -48,15 +48,19 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    year = args.year if args.year else "year_" + str(max([
+    year = f"year_{args.year}" if args.year else str(max([
         int(dir[5:])
         for dir in os.listdir(os.path.dirname(__file__))
         if dir[5:].isnumeric()
     ]))
+    print(year)
 
-    days = [
-        args.day if args.day else dir
-        for dir in os.listdir(os.path.dirname(__file__) + f"/{year}")
-    ]
+    if args.day:
+        days = [f"day_{args.day}"]
+    else:
+        days = [
+            dir for dir in os.listdir(os.path.dirname(__file__) + f"/{year}")
+        ]
+    print(days)
 
     execute(year, days)

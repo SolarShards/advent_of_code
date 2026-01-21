@@ -1,4 +1,4 @@
-def read_input(filename: str) -> list[tuple[int, int]]:
+def read_input(filename: str) -> list[tuple[int, ...]]:
     return [
         tuple(map(int, ranges.split("-")))
         for ranges in open(filename).read().split(",")

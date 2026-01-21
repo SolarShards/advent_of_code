@@ -16,10 +16,3 @@ def part_one(filename: str) -> int:
 
 def part_two(filename: str) -> int:
     return 0
-
-
-if __name__ == "__main__":
-    import os
-    print(read_input(os.path.dirname(__file__) + "\\input.txt"))
-    print(part_one(os.path.dirname(__file__) + "\\input.txt"))
-    print(part_two(os.path.dirname(__file__) + "\\input.txt"))
