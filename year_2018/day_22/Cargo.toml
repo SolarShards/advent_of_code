@@ -1,0 +1,9 @@
+[package]
+name = "day_22"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ndarray = "0.17.2"
+pathfinding = "4.15.0"
+regex = "1.13.1"

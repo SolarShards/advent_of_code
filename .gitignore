@@ -2,3 +2,5 @@
 *.json
 *.txt
 year_*/day_*/day*
+year_*/day_*/target/*
+year_*/day_*/Cargo.lock
